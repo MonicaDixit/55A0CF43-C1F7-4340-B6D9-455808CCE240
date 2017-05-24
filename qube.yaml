@@ -1,0 +1,32 @@
+id: 04904a77-dd34-4000-ab51-d77705640081
+version: v2
+name: QubeFirstPythonProject
+apptype: api
+language: python
+containerName: qubefirstpythonproject
+toolchain:
+  id: 58e3fad09a148400216611cc
+  name: Qubeship-Python-Toolchain
+opinion:
+  id: 58e5596a13d0cc000e88a95d
+  name: Qubeship default opinion
+endpoint:
+  id: 
+  name: Default Endpoint
+  type: 
+variables:
+  - name: APP_VERSION
+    value: v0.1
+build:
+  compile:
+    publish:
+     - dist/
+bake:
+  skip: false
+test:
+  skip: true
+deploy_to_qa:
+  skip: true
+deploy_to_prod:
+  skip: false
+
